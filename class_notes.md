@@ -99,3 +99,19 @@ rails g model Like
 start with `belongs to`
 
 write the corresponding `has_many`
+
+#Starter commands
+#rails new BlueBird --database=postgresql#--minimal
+#rm -rf .git #removes that it is a git repository, could also put -G it command above
+#rails db:create #must be in main file
+#psql BlueBird_development #opens pry
+#=pry \d #shows reations
+#rails generate migration CreateUsers #makes a migrate folder with a table
+#rails db:migrate
+#rails db:migrate:status #if status is up, that migration has been to applied to table
+#rails g migration AddAgeAndPAToUsers
+#rails g model Chirp
+#rails c
+#rails g model Like #generator command to make a model and a migrate file
+#rails db:seed #will do whatever is in seed
+#bundle exec rails dbconsole #this will open a postgresql lobby where you can write sql
