@@ -96,3 +96,6 @@ rails g model Like
 
 ## Association
 
+start with `belongs to`
+
+write the corresponding `has_many`
