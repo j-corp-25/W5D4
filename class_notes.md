@@ -51,4 +51,11 @@ Folders inside the project
 The main focus is inside the APP folder
 
 and inside the folder we focus on
-VIEWS,MODELS AND CONTROLLER 
+VIEWS,MODELS AND CONTROLLER
+
+We create migrations in DB folder
+
+we also have a seeds folder
+which is what we use to feed into database
+
+The gem file is already created for us
