@@ -63,3 +63,14 @@ The gem file is already created for us
 ![Snips](/classsnips/Screenshot%202023-06-01%20at%2010.34.32%20AM.png)
 
 
+
+## Models
+
+Its the central component of the MVC patterns
+Its a class that represent and idrecrtly mabages the data logic and rules afor a table
+
+it normally contains : valifdations association and cistom  methoddss
+
+it inherot form applicoationreconrd which in utrn inherits from acitve record
+
+
