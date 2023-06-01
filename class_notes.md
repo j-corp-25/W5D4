@@ -22,3 +22,10 @@ We use migrations to create tables
 We create a migration to change how our schema looks like.
 
 
+commmon migration methods
+
+add_column
+
+remove_column
+
+
