@@ -84,3 +84,15 @@ Common Calidations
 validates :some_columns, presence: true
     similar to null:false
 
+commands
+rails g model Like
+
+
+
+
+
+
+
+
+## Association
+

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_01_150927) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_01_180558) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -20,6 +20,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_01_150927) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["author_id"], name: "index_chirps_on_author_id"
+  end
+
+  create_table "likes", force: :cascade do |t|
+    t.bigint "liker_id", null: false
+    t.bigint "chirp_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["chirp_id"], name: "index_likes_on_chirp_id"
+    t.index ["liker_id", "chirp_id"], name: "index_likes_on_liker_id_and_chirp_id", unique: true
+    t.index ["liker_id"], name: "index_likes_on_liker_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -32,4 +42,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_01_150927) do
   end
 
   add_foreign_key "chirps", "users", column: "author_id"
+  add_foreign_key "likes", "chirps"
+  add_foreign_key "likes", "users", column: "liker_id"
 end
