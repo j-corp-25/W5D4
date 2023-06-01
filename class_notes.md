@@ -38,4 +38,8 @@ Then we try to edit the migration and that causes issues.
 We can rollback on the test since we are not deploying into a server. No bad outcome basically for now.
 
 
+Down status means the migration has not been updated to the table
+UP status means that it has been update in the schema file
+
+
 
