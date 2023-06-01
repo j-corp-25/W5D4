@@ -64,6 +64,12 @@ The gem file is already created for us
 
 
 
+![Snips](/classsnips/Screenshot%202023-06-01%20at%2011.11.15%20AM.png)
+
+
+
+
+
 ## Models
 
 Its the central component of the MVC patterns
@@ -73,4 +79,8 @@ it normally contains : valifdations association and cistom  methoddss
 
 it inherot form applicoationreconrd which in utrn inherits from acitve record
 
+Common Calidations
+
+validates :some_columns, presence: true
+    similar to null:false
 
