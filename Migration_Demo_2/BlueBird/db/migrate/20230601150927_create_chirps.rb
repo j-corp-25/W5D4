@@ -3,7 +3,7 @@ class CreateChirps < ActiveRecord::Migration[7.0]
     create_table :chirps do |t|
       t.string :body, null: false
       # t.integer :author_id, null: false
-      t.references :author, foreign_key: { to_table: :users}, index:true
+      t.references :author, foreign_key: { to_table: :users}, index:true, null: false
       t.timestamps
     end
 
