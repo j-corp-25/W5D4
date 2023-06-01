@@ -28,4 +28,14 @@ add_column
 
 remove_column
 
+you can change the current migration, we can do a roll
+
+we run into problems when we run the migration and it goes to the server.
+
+Then we try to edit the migration and that causes issues.
+
+
+We can rollback on the test since we are not deploying into a server. No bad outcome basically for now.
+
+
 
