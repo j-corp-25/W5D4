@@ -59,3 +59,7 @@ we also have a seeds folder
 which is what we use to feed into database
 
 The gem file is already created for us
+
+![Snips](/classsnips/Screenshot%202023-06-01%20at%2010.34.32%20AM.png)
+
+
