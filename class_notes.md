@@ -42,4 +42,13 @@ Down status means the migration has not been updated to the table
 UP status means that it has been update in the schema file
 
 
+MIGRATION DEMO
 
+rails new [name_of_project] --database=postgresql -G
+
+Folders inside the project
+
+The main focus is inside the APP folder
+
+and inside the folder we focus on
+VIEWS,MODELS AND CONTROLLER 
